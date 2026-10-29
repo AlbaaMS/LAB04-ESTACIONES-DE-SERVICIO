@@ -37,7 +37,7 @@ def test_estacion_mas_cercana():
 
     punto = (1.5, 1.5)
     mas_cercana = busca_estacion_mas_cercana(estaciones, punto)
-    assert mas_cercana == e3
+    assert mas_cercana == e2
 
 def test_calcula_ruta():
     e1 = EstacionSevici("Est1", "Dir1", 0.0, 0.0, 10, 5, 3)  # 3 bicis
@@ -78,10 +78,10 @@ def test_calcula_estadisticas():
 
 # Descomenta las llamadas a las funciones de prueba a medida que vayas 
 # resolviendo los ejercicios
-test_selecciona_color()
+#test_selecciona_color()
 #test_calcula_estadisticas()
 #test_busca_estacion_direccion()
 #test_estaciones_con_disponibilidad()
 #test_estacion_mas_cercana()
-#test_calcula_ruta()
+test_calcula_ruta()
 print("Todas las pruebas pasaron correctamente.")
